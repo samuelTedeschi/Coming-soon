@@ -33,6 +33,7 @@ body{
     border-radius: 40px;
     border-style: none;
     background: whitesmoke;
+    cursor: pointer;
     color: black;
     font-size: 1.1rem;
     width: 200px;
