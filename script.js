@@ -1,13 +1,16 @@
-function time(){
-    temporisador = new Date();
-    
-    let hora = temporisador.getHours();
-    let min = temporisador.getMinutes();
-    let seg = temporisador.getSeconds();
+let deadline = new Date("jul 13, 2022 22:35:00").getTime();
 
-    document.getElementById("dv1").innerHTML = hora
-    document.getElementById("dv2").innerHTML = min
-    document.getElementById("dv3").innerHTML = seg
-}
+let time = setInterval(function (){
+let now = new Date().getTime();
+let t = deadline - now;
 
+let days = Math.floor(t / (1000 * 60 * 60 * 24));
+let hours = Math.floor((t % (1000 * 60 * 60* 24)) / (1000 * 60 * 60));
+let min = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+let seg = Math.floor((t % (1000 * 60)) / 1000)
 
+document.getElementById("day").innerHTML =days;
+document.getElementById("hour").innerHTML =hours + ":";
+document.getElementById("minute").innerHTML = min + ":"; 
+document.getElementById("second").innerHTML =seg;
+})
