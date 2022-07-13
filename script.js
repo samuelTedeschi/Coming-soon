@@ -1,4 +1,4 @@
-let deadline = new Date("jul 13, 2022 22:35:00").getTime();
+let deadline = new Date("nov 1, 2022 22:35:00").getTime();
 
 let time = setInterval(function (){
 let now = new Date().getTime();

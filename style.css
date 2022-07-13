@@ -88,3 +88,36 @@ body{
     border-radius: 40px;
     box-shadow: 10px 10px 20px #830011;
 }
+
+@media only screen and (max-width: 384px) {
+
+    body{
+        flex-direction: column-reverse;
+        padding-top: 30px;
+    }
+
+    .conteudo h1{
+        font-size: 2.1rem;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .time{
+        margin-top:60px;
+    }
+
+    .conteudo input{
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+
+    .conteudo p{
+        margin-top: 40px;
+    }
+
+    .produto img {
+        margin: 0;
+        width: 350px;
+        height: 330px;
+    }
+}
